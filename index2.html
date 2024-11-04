@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Tab ✮⋆˙</title>
+    <link rel="website icon" type="png" href="icon2.png">
+<style>
+     body {
+        margin: 0%;
+        height: 100vh;
+        background-image: url(discussiontab.png);
+        background-size: cover;
+        background-repeat: no-repeatrepeat;
+        background-position: center;
+     }
+     body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(to left, rgba(241, 237, 236, 0), rgba(100, 36, 109, 0.342), rgba(0, 0, 0, 0.87));
+        pointer-events: none;
+    }
+    .Text1 {
+        position: relative;
+        z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        font-size: 20px;
+        font-size: clamp(40px, 8vc, 150px)
+    }
+    .people {
+        position:absolute;
+         z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        gap: 45px;
+        font-size: 50px;
+        top: 26%;
+        display: flex; 
+        align-items: center; 
+        
+    }
+    .people-image {
+        width: 100px;
+        height: 100px; 
+        margin-left: 50px; 
+        border-radius: 50px;
+    
+    }
+    .people p {
+        position: relative;
+        z-index: 2;
+        padding: 5px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-left: 10px; 
+        
+    }
+    .KSIbutton {
+        width: 650px;
+        background-color: rgba(139, 44, 168, 0.699);
+        padding: 1px 5px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .people2 {
+        position:absolute;
+         z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        gap: 45px;
+        font-size: 50px;
+        bottom: 5%;
+        right: 0%;
+        display: flex; 
+        align-items: right; 
+        justify-content: flex-end; 
+        flex-direction: row-reverse;
+    }
+    .people2-image {
+        width: 100px;
+        height: 100px; 
+        border-radius: 50px;
+    }
+    .people2 p {
+        position: relative;
+        z-index: 2;
+        padding: 2px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-right: 0px; 
+    }
+    .Lukabutton {
+        width: 650px;
+        background-color: rgba(57, 15, 70, 0.705);
+        padding: 1px 25px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .people3 {
+        position:absolute;
+         z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        gap: 40px;
+        font-size: 50px;
+        bottom: -95%;
+        right: 0%;
+        display: flex; 
+        align-items: left; 
+        justify-content: flex-end; 
+        flex-direction: row-reverse;
+    }
+    .people3-image {
+        width: 100px;
+        height: 100px; 
+        border-radius: 50px;
+    }
+    .people3 p {
+        position: relative;
+        z-index: 2;
+        padding: 5px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-right: 0px; 
+        text-align: center;
+    }
+    .Zbutton {
+        width: 600px;
+        background-color: rgba(17, 1, 22, 0.705);
+        padding: 1px 15px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .people4 {
+        position:absolute;
+         z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        gap: 40px;
+        font-size: 50px;
+        bottom: -80%;
+        right: 0%;
+        display: flex; 
+        align-items: left; 
+        justify-content: flex-end; 
+        flex-direction: row-reverse;
+    }
+    .people4-image {
+        width: 100px;
+        height: 100px; 
+        border-radius: 50px;
+    }
+    .people4 p {
+        position: relative;
+        z-index: 2;
+        padding: 5px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-right: 0px; 
+        text-align: center;
+    }
+    .Lbutton {
+        width: 600px;
+        background-color: rgba(57, 15, 70, 0.705);
+        padding: 1px 5px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .people5 {
+        position:absolute;
+         z-index: 2;
+        padding: 25px; 
+        color: rgb(214, 163, 255);
+        text-align: left;
+        gap: 40px;
+        font-size: 50px;
+        bottom: -145%;
+        right: 0%;
+        display: flex; 
+        align-items: left; 
+        justify-content: flex-end; 
+        flex-direction: row-reverse;
+    }
+    .people5-image {
+        width: 100px;
+        height: 100px; 
+        border-radius: 50px;
+    }
+    .people5 p {
+        position: relative;
+        z-index: 2;
+        padding: 5px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-right: 0px; 
+        text-align: center;
+    }
+    .Ybutton {
+        width: 550px;
+        background-color: rgba(57, 15, 70, 0.705);
+        padding: 1px 15px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .people6 {
+        position: absolute;
+        z-index: 2;
+        padding: 25px;
+        color: rgb(214, 163, 255);
+        font-size: 50px;
+        bottom: -50%; 
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px; 
+        justify-content: flex-end; 
+        flex-direction: row-reverse;
+    }
+    .people6-image {
+        width: 100px;
+        height: 100px; 
+        border-radius: 100px;;
+    }
+    .people6 p {
+        position: relative;
+        z-index: 2;
+        padding: 5px; 
+        color: rgb(214, 163, 255);
+        font-size: 20px;
+        margin-right: 0px; 
+        text-align: center;
+    }
+    .Kbutton {
+        width: 600px;
+        background-color: rgba(57, 15, 70, 0.705);
+        padding: 1px 10px;
+        border-radius: 50px;
+        border-width: 2px;
+        border: 1;
+        letter-spacing: 1px;
+        border-style: dashed;
+        border-color: rgb(204, 154, 250);
+    }
+    .texttwo {
+        bottom: -95%;
+    }
+</style>
+</head>
+<body>
+    <div class="Text1">
+        <h1>Discussion ▶︎ •၊၊||၊|။||||| </h1>
+        <p>this is where you show your favorite songs to other people and discuss topics about it!</p>
+        <hr>
+    </div>
+        <div class="people">
+            <div>
+                <p class="text">1KSI_glazer posted!</p>
+                <img src="ksi.png" alt="Description" class="people-image">
+            </div>
+            <div class="KSI">
+                <div class="KSIbutton">
+                    <p> HI GUYS WHAT ARE YOUR FAV SONG? FEEL FREE TO EXPLAIN WHY :D 
+                        mines "The thick of it" by KSI because it made me feel like I was strong.. like I was the alpha.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="people2">
+            <div>
+                <p class="text">ILoveLuka commented!</p>
+                <img src="luka.png" alt="Description" class="people-image">
+            </div>
+         <div class="Luka">
+            <div class="Lukabutton">
+                <p> Bird cage blue and yellow by Yaelokre
+                    The line "I can be different, I can't be puppetted" strikes me every time i hear it as someone
+                     who's been controlled and silenced my entire life. It gives me hope that I'll unleash myself
+                     from these strings and finally live my life free from the place that once held me down
+                </p>
+            </div>
+        </div>
+        <div class="people3">
+            <div>
+                <p class="text">You commented!</p>
+                <img src="zyypfp.png" alt="Description" class="people-image">
+            </div>
+        <div class="Zyy">
+            <div class="Zbutton">
+                <p> Swerve City by deftones!! In the part 1:44 the combination of the electric guitar and the bass
+                    is just wild, it Hits different especially when the lead joins in. THIS song is underrated!!
+                </p>
+            </div>
+        </div>
+        <div class="people4">
+            <div>
+                <p class="text">Ly commented!</p>
+                <img src="till.png" alt="Description" class="people-image">
+            </div>
+        <div class="Lie">
+            <div class="Lbutton">
+                <p> Duwag by Zild,
+                    As someone that has a lot of regrets in my life, this songs just gets it idk😓😓
+                    it also helped me improve myself and avoid being in a situation where i say
+                    "Ano kaya ang magaganap kung hindi ako nagpakaduwag?" again
+                </p>
+            </div>
+        </div>
+        <div class="people5">
+            <div>
+                <p class="text">Yi Xi commented!</p>
+                <img src="mizi.png" alt="Description" class="people-image">
+            </div>
+        <div class="Yi">
+            <div class="Ybutton">
+                <p> Mostly , "past lives" by sapientdream . If one believes in the existence of a past life and specially feels connection
+                     with their soulmate , it's really surreal. The beat specially as the song progresses it takes you back to the forgotten
+                      past , unfolding the records of time . In a place which had been so familiar to you once yet now it gives a mixed feeling
+                       between what's known and the unknown. Yet you'd feel much more at home there , than you do in this timeline.
+                        And just appreciate the unchangeable and neverending affection you feel for your significant other once more.
+                         As if you've fallen for them all over again, and will continue to do so, in each lifetime .
+                </p>
+            </div>
+        </div>
+        <div class="people6">
+            <div>
+                <p class="text">Kaorice commented!</p>
+                <img src="bruce.png" alt="Description" class="people-image">
+            </div>
+        <div class="Kao">
+            <div class="Kbutton">
+                <p> Leakin by Sun Kenji, No words, Just pure masterpiece fr
+                </p>
+            </div>
+        </div>
+</body>
+</html>
